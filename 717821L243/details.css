@@ -1,0 +1,27 @@
+body{
+    background-color:rgba(102, 49, 6, 0.932);
+    width:100% ;
+    margin-left:-1px;
+}
+.back1{
+    font-family:'Times New Roman', Times, serif;
+    font-size:30px;
+    background-color:rgba(197, 150, 95, 0.986);
+    text-align: center;
+    top:-50px;
+    position:relative;
+    background-size: 100% 100%;}
+
+    .styled-text1{
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        top:-550px;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bold;
+        margin-left: 100px;
+        }
+        .image{
+            position:relative;
+            margin-left: 725px;
+        }

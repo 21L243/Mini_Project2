@@ -1,0 +1,46 @@
+body{
+    background-color:rgba(102, 49, 6, 0.932);
+    width:100% ;
+    margin-left:-1px;
+   
+}
+.back{
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    background-color:rgba(197, 150, 95, 0.986);
+    text-align: center;
+    top:-50px;
+    position:relative;
+    background-size: 100% 100%;
+}
+img {
+    border-radius: 70%;
+    width:24%;
+    margin-left: 100px;
+}
+.buttons button{
+    position:relative;
+    background-color: rgba(197, 150, 95, 0.986); 
+    border: 1px solid black; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 50%; 
+    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+    margin-left: 650px;
+    top:-300px;
+
+
+  
+}
+.buttons button:hover
+{
+    background-color:rgba(172, 111, 55, 0.842); 
+}
+.welcome{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: -600px;
+    margin-left: 750px;
+}

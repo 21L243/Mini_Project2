@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+   
+    <link rel="stylesheet" href="details.css">
+    <div class="back1">
+        <h1><b><i> Book Details</i></b> </h1>
+    </div>
+    <div class="image">
+        <img src="https://p4.wallpaperbetter.com/wallpaper/449/616/17/books-ribbon-paper-glasses-wallpaper-preview.jpg";>
+        </div>
+    <div id="INFO" class="styled-text1"></div>
+    <script>
+    function book(titlename,authorname,year){
+        return{
+            title:titlename,
+            author:authorname,
+            year1:year,
+        }
+    }
+    let book1=book("Harry potter","John","2000");
+    let book2=book("Barbie","Merry","2003");
+    let book3=book("Spiderman","william","1995");
+    const bookInfo = document.getElementById("INFO");
+    
+    const title1 = document.createElement("p");
+    title1.textContent ="Title:" +book1.title;
+    bookInfo.appendChild(title1);   
+     
+    const title2= document.createElement("p");
+    title2.textContent ="Author:" +book1.author;
+    bookInfo.appendChild(title2); 
+     
+    const title3 = document.createElement("p");
+    title3.textContent ="Published Year:" +book1.year1;
+    bookInfo.appendChild(title3);   
+    
+    const title11 = document.createElement("p");
+    title11.textContent ="Title:" +book2.title;
+    bookInfo.appendChild(title11);   
+     
+    const title12= document.createElement("p");
+    title12.textContent ="Author:" +book2.author;
+    bookInfo.appendChild(title12); 
+     
+    const title13 = document.createElement("p");
+    title13.textContent ="Published Year:" +book2.year1;
+    bookInfo.appendChild(title13);   
+    
+    const title21 = document.createElement("p");
+    title21.textContent ="Title:" +book3.title;
+    bookInfo.appendChild(title21);   
+     
+    const title22= document.createElement("p");
+    title22.textContent ="Author:" +book3.author;
+    bookInfo.appendChild(title22); 
+     
+    const title23 = document.createElement("p");
+    title23.textContent ="Published Year:" +book3.year1;
+    bookInfo.appendChild(title23);   
+
+    </script>
+</body>
+</html>

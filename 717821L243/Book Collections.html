@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collections</title>
+</head>
+<link rel="stylesheet" href="Book Collections.css">
+<body>
+    <div class="back">
+    <h1><b><i>Your Book Collections</i></b> </h1>
+</div>
+<div class="image">
+    <img src="https://www.jewishexponent.com/wp-content/uploads/2019/10/GettyImages-1070683626-300x200.jpg";>
+
+</div>
+
+
+<div id="book-collection" class="styled-text"></div>
+<div class="button">
+    <button onclick="Add()"><b>Add Books</b></button>
+    <button onclick="Remove()"><b>Remove Books</b></button>
+</div>
+
+<script>
+     let book1=[];
+     let len=book1.length;
+function Add() {
+    let a = prompt("How many books do you want to add to your collections:");
+    for (let i = 1; i <= a; i++) {
+        let b = prompt("Book name " + i + ":");
+
+   book1.push(b);        
+    }
+   Add1();
+}
+  let b1 = document.getElementById("book-collection");
+    const ul = document.createElement("ul");
+for (let i1 = 0; i1 < book1.length; i1++) {
+        const li = document.createElement("li");
+        li.textContent = book1[i1];
+        ul.appendChild(li);
+    }
+
+ 
+    b1.appendChild(ul);
+
+   function Add1(){
+       for (let i1 = len; i1 < book1.length; i1++) {
+        const li = document.createElement("li");
+        li.textContent = book1[i1];
+        ul.appendChild(li);
+    }
+  
+   b1.appendChild(ul);
+   len=book1.length;
+}
+function Remove() {
+    let a1 = prompt("How many books do you want to remove from your collections:");
+    for (let i3 = 1; i3 <= a1; i3++) {
+        
+   book1.pop();        
+
+}
+clearContent();
+  remove1();
+}
+function clearContent() {
+      const bb = document.getElementById("book-collection");
+      bb.innerHTML = ""; 
+    }
+
+function remove1(){
+    const ul = document.createElement("ul");
+       for (let i1 = 0; i1 < book1.length; i1++) {
+        const li = document.createElement("li");
+
+        li.textContent = book1[i1];
+        ul.appendChild(li);
+    }
+    const b1 = document.getElementById("book-collection");
+   b1.appendChild(ul);
+   len=book1.length;
+}
+
+
+</script>
+
+
+</body>
+</html>

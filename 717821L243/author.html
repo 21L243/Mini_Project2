@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author</title>
+    <link rel="stylesheet" href="author.css">
+</head>
+<body>
+    <div class="back3">
+        <p><b><i>Author</i></b></p>
+   
+</div>
+<div id="name" class="styled-text3"></div>
+
+<script>
+
+
+    let a=prompt("Enter book name to search author");
+   
+    const gets=document.getElementById("name")
+    const get=document.createElement("p");
+    for(let j=0;j<1;j++)
+    {
+        if(a=="Harry potter")
+        {
+         get.textContent="Author name:John";
+         gets.appendChild(get);
+        }
+        else if(a=="Snow white")
+        {
+            get.textContent="Author name:Jack";
+         gets.appendChild(get);
+        }
+        else if(a=="Cindrella")
+        {
+            get.textContent="Author name:Merry";
+         gets.appendChild(get);
+        }
+        else if(a=="Barbie")
+        {
+            get.textContent="Author name:Merry";
+         gets.appendChild(get);
+        }
+        else{
+            get.textContent="The Author name is not found because there is no book in our library you searching for!";
+         gets.appendChild(get);
+        }
+
+
+        
+    }
+</script>
+</body>
+</html>
